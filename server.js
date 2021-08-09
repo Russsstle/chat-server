@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 const bodyParser = require('body-parser')
 const rooms = {}
-const messages = {}
+
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.header(
